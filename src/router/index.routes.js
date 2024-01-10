@@ -2,7 +2,7 @@ import { Router } from "express";
 
 import list_routes from "./list-character.routes.js";
 import auth_routes from "./auth.routes.js";
-import { home } from "../controller/views.js";
+import home from "../controller/home.js";
 
 const router = Router();
 

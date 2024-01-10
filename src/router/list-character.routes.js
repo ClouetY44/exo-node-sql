@@ -1,6 +1,6 @@
 import {Router} from "express"
 
-import { list, detail } from "../controller/characters/viewsCharacter.js";
+import { list, detail } from "../controller/characters/views.js";
 
 const router = Router();
 
