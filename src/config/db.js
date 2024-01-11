@@ -6,8 +6,9 @@ const pool = mysql.createPool({
     database: process.env.DB_NAME,
     user: process.env.DB_USER,
     password: process.env.DB_PASS,
-    // rajouter le PORT (MAC)
-    // les différentes option vues en cours
+    waitForConnections: true,
+    connectionLimit: 10,
+    queueLimit: 0,
 });
 
 pool.getConnection().then((connection)=>{

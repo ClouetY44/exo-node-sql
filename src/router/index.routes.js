@@ -6,13 +6,10 @@ import home from "../controller/home.js";
 
 const router = Router();
 
-// accueil
 router.get("/", home)
 
-// middleware vers les routes liste-personnages
 router.use("/liste-personnages", list_routes);
 
-// middleware vers les routes liste-personnages
 router.use("/authentification", auth_routes);
 
 
